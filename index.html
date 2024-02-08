@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aim Trainig Game</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Aim Training</h1>
+      <a href="#" class="start" id="start">Начать игру</a>
+    </div>
+
+    <div class="screen">
+      <h1>Выберите время</h1>
+      <ul class="time-list" id="time-list">
+        <li>
+          <button class="time-btn" data-time="10">
+            10 с.
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="20">
+            20 с.
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="30">
+            30 с.
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="40">
+            40 с.
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen">
+      <h1>Выберите размер шарика</h1>
+      <ul class="size-list" id="size-list">
+        <li>
+          <button class="size-btn" data-info="10,100">
+            от 10 до 100
+          </button>
+        </li>
+        <li>
+          <button class="size-btn" data-info="10,50">
+            от 10 до 50
+          </button>
+        </li>
+        <li>
+          <button class="size-btn" data-info="5,100">
+            от 5 до 100
+          </button>
+        </li>
+        <li>
+          <button class="size-btn" data-info="5,50">
+            от 5  до 50
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen">
+      <h3>Осталось <span id="time">00:00</span></h3>
+      <div class="board" id="board"></div>
+    </div>
+
+    <div class="screen">
+      <p  class="score-player" id="score-player">Ваш прошлый результат: </p>
+      <h1 id="score"></h1>
+      <a href="#" class="again" id="again">Начать заново</a>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
